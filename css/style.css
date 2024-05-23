@@ -2,7 +2,9 @@
   margin: 0;
   padding: 0;
   font-family: Calibri, sans-serif;
-  /* border: none; */
+  border: none;
+  outline: none;
+  text-decoration: none;
 }
 
 :root {
@@ -24,31 +26,33 @@ header {
 nav {
   position: relative;
   text-align: center;
+  display: flex;
+  justify-content: space-between;
+  gap: 4px;
+  align-items: center;
   width: 100%;
   color: var(--text-color);
   background: var(--primary-color);
   box-sizing: border-box;
   z-index: 1;
+  /* padding: 4px 6px; */
 }
 
 nav button {
   cursor: pointer;
-  background: none;
-  border: none;
-  outline: none;
   color: var(--text-color);
+  background: none;
   padding: 4px 6px;
   font-size: 20px;
 }
 
 nav .menu {
   cursor: pointer;
-  font-size: 18px;
-  position: absolute;
-  padding: 2px 6px;
-  left: 2px;
-  top: 2px;
-  font-size: 24px;
+  margin-left: 4px;
+  /* flex-grow: 1; */
+  /* position: absolute;
+  left: 4px;
+  top: 4px; */
 }
 nav .menu i {
   position: relative;
@@ -77,7 +81,7 @@ header .sidebar-menu {
   font-size: 12px;
   color: var(--text-color);
   text-decoration: none;
-  padding: 4px 6px;
+  padding: 6px;
   border-radius: 2px;
 }
 .sidebar-menu a:hover {
@@ -94,26 +98,33 @@ header .sidebar-menu {
 
 nav .shop-bag {
   cursor: pointer;
-  position: absolute;
+  /* flex-grow: 1; */
+  /* position: absolute;
   right: 38px;
-  top: 4px;
+  top: 4px; */
 }
 
 nav a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: var(--text-color);
   text-decoration: none;
-  padding: 4px 32px;
+  padding: 8px 16px;
 }
 
 nav h1 {
   background-color: var(--primary-color);
-  padding: 4px 32px;
+  flex-grow: 6;
+  /* padding: 4px; */
 }
 
 nav button.search {
-  right: 2px;
+  /* right: 2px;
   top: 4px;
-  position: absolute;
+  position: absolute; */
+  /* flex-grow: 1; */
+  margin-right: 4px;
   text-decoration: none;
   border-radius: 4px;
   transition: all 0.3 ease;
@@ -128,6 +139,7 @@ nav button.search i {
   position: relative;
   width: 100%;
   /* background: var(--bg-color); */
+  top: 2px;
   padding: 4px;
   box-sizing: border-box;
 }
@@ -135,7 +147,7 @@ nav button.search i {
 .kotak-pencarian input {
   color: #2e1b25;
   width: 100%;
-  padding: 4px 8px;
+  padding: 6px 8px;
   box-sizing: border-box;
   border: none;
   border-radius: 2px;
@@ -174,18 +186,18 @@ header form {
 
 /* Main Konten */
 main {
-  position: absolute;
-  top: 69px;
+  position: relative;
+  top: -52px;
   width: 100%;
   transition: 0.3s;
   z-index: 9;
 }
 .search-on {
-  top: 102px;
+  top: -10px;
   transition: 0.3s;
 }
 .menu-on {
-  top: 144px;
+  top: 32px;
   transition: 0.3s;
 }
 
@@ -221,9 +233,8 @@ main {
 .kotak-unggulan .medsos a {
   font-size: 10px;
   padding-left: 8px;
-  padding-right: 10px;
-  padding-top: 2px;
-  padding-bottom: 4px;
+  padding-top: 4px;
+  padding-bottom: 6px;
   border-radius: 2px;
   color: var(--text-color);
   text-decoration: none;
@@ -236,6 +247,7 @@ main {
   font-size: 12px;
   position: relative;
   top: 2px;
+  left: 0;
   margin-right: 2px;
 }
 .kotak-unggulan .medsos a:nth-child(1) {
@@ -301,7 +313,7 @@ main {
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
 }
 
-.kotak-unggulan .unggulan .gambar button.new {
+.kotak-unggulan .unggulan .gambar span.new {
   border: none;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -317,7 +329,7 @@ main {
   overflow: hidden;
 }
 
-.kotak-unggulan .unggulan .gambar button.new::after {
+.kotak-unggulan .unggulan .gambar span.new::after {
   content: "";
   position: absolute;
   top: 0;
@@ -403,15 +415,16 @@ main .daftar {
   display: flex;
   justify-content: space-evenly;
   gap: 8px;
-  padding: 16px 12px;
-  padding-bottom: 12px;
+  padding: 2rem 12px;
   flex-wrap: wrap;
 }
 
 main .daftar img {
   background: var(--primary-color);
-  height: 7.5rem;
-  /* width: 5rem; */
+  height: 6.5rem;
+  width: 5.5rem;
+  object-fit: cover;
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.5), 0 4px 5px 0 rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
 
