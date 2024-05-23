@@ -43,7 +43,7 @@ nav button {
   color: var(--text-color);
   background: none;
   padding: 4px 6px;
-  font-size: 20px;
+  font-size: 26px;
 }
 
 nav .menu {
@@ -116,6 +116,7 @@ nav a {
 nav h1 {
   background-color: var(--primary-color);
   flex-grow: 6;
+  font-size: 28px;
   /* padding: 4px; */
 }
 
@@ -270,7 +271,7 @@ main {
 .kotak-unggulan .unggulan {
   margin-top: 12px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: start;
   gap: 8px;
   align-items: center;
   padding-bottom: 0.5rem;
@@ -386,7 +387,6 @@ main .makanan {
   align-items: center;
   background: var(--text-color);
   box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.5);
-  margin-bottom: 1rem;
   /* padding-bottom: 1rem; */
   transition: 0.3s;
   top: -32px;
@@ -436,11 +436,23 @@ main .makanan span {
   background-color: rgb(43, 43, 43);
 }
 
+footer {
+  font-size: 10px;
+  color: gray;
+  text-align: center;
+  margin-top: -2rem;
+  margin-bottom: 2rem;
+}
+
 /* Media Screen atau Responsif */
 @media screen and (min-width: 800px) {
   body,
+  header,
   main {
-    width: 50%;
+    width: 70%;
     margin: 0 auto;
+  }
+  main {
+    background-color: grey;
   }
 }
