@@ -18,6 +18,5 @@ function toggleMenu() {
   if (main.classList.contains("search-on")) {
     main.classList.remove("search-on");
   }
-
   main.classList.toggle("menu-on");
 }
