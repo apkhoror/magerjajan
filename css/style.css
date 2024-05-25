@@ -10,6 +10,7 @@
 :root {
   --primary-color: linear-gradient(to right, #dc143c, #ff007f);
   --bg-color: #000;
+  --text-black: rgb(20, 20, 20);
   --text-color: #fefcff;
   --border-color: #93917c;
 }
@@ -69,8 +70,8 @@ header .sidebar-menu {
   justify-content: space-between;
   align-items: center;
   gap: 4px;
-  padding: 8px;
-  padding-bottom: 12px;
+  padding: 12px 8px;
+  /* padding-bottom: 12px; */
   /* background-color: #e4e4e4; */
 }
 .sidebar-menu h5 {
@@ -190,7 +191,7 @@ header form {
 /* Main Konten */
 main {
   position: relative;
-  top: -59px;
+  top: -63px;
   width: 100%;
   transition: 0.3s;
   z-index: 9;
@@ -399,6 +400,16 @@ main .daftar-makanan .makanan {
   color: var(--bg-color);
   align-self: flex-start;
 }
+.makanan h3::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 72px;
+  background-image: var(--primary-color);
+  margin-left: 2px;
+  /* transform: rotate(-60deg); */
+  /* transform: translateX(12px); */
+}
 
 .makanan button {
   border: none;
@@ -447,6 +458,7 @@ main .daftar .kartu-makanan img {
   margin: 6px 8px;
 }
 main .daftar .kartu-makanan .nama-makanan {
+  color: var(--text-black);
   font-weight: bold;
   font-size: 20px;
 }
@@ -488,7 +500,7 @@ main .daftar .kartu-makanan .harga-makanan {
 
 footer {
   position: relative;
-  bottom: -52px;
+  bottom: -54px;
   width: 100%;
   /* height: 14rem; */
   /* margin-top: -3.5rem; */
@@ -510,11 +522,16 @@ footer {
 }
 
 .judul-footer h1::after {
+  display: block;
   content: "";
-  position: absolute;
+  /* position: absolute;
   top: 32px;
   left: 10rem;
   right: 14px;
+  height: 2px; */
+  width: 55%;
+  float: right;
+  margin-top: 16px;
   height: 2px;
   background-color: var(--text-color);
   color: var(--text-color);
@@ -522,34 +539,34 @@ footer {
 
 .detail-footer p {
   text-align: start;
-  line-height: 14px;
+  line-height: 16px;
+  text-align: justify;
 }
 footer .copyright {
   font-size: 10px;
-  padding: 12px;
+  padding: 16px;
 }
 
 /* Media Screen atau Responsif */
 @media screen and (min-width: 800px) {
   body,
   header,
-  main,
-  footer {
-    width: 70%;
+  main {
+    width: 100%;
     margin: 0 auto;
   }
   body {
     width: 80%;
+    background-color: var(--border-color);
   }
   .konten .kotak-unggulan .unggulan::-webkit-scrollbar {
     display: none;
   }
   main {
-    background-image: linear-gradient(#000, #222);
-    padding-bottom: 6rem;
+    background-color: #d1d1d1;
   }
   footer {
-    margin-top: -4rem;
+    /* margin-top: -4rem; */
     z-index: 100;
   }
 }
