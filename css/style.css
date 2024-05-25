@@ -83,7 +83,7 @@ header .sidebar-menu {
   font-size: 12px;
   color: var(--text-color);
   text-decoration: none;
-  padding: 6px;
+  padding: 8px;
   border-radius: 2px;
 }
 .sidebar-menu a:hover {
@@ -142,7 +142,7 @@ nav button.search i {
   position: relative;
   width: 100%;
   /* background: var(--bg-color); */
-  top: 2px;
+  top: 4px;
   padding: 4px;
   box-sizing: border-box;
 }
@@ -150,7 +150,7 @@ nav button.search i {
 .kotak-pencarian input {
   color: #2e1b25;
   width: 100%;
-  padding: 6px 8px;
+  padding: 8px;
   box-sizing: border-box;
   border: none;
   border-radius: 2px;
@@ -190,7 +190,7 @@ header form {
 /* Main Konten */
 main {
   position: relative;
-  top: -52px;
+  top: -59px;
   width: 100%;
   transition: 0.3s;
   z-index: 9;
@@ -364,7 +364,8 @@ main {
   color: var(--text-color);
   /* left: 50%; */
   bottom: 48px;
-  font-size: 14px;
+  font-size: 12px;
+  margin-bottom: 2px;
   /* font-weight: bold; */
   z-index: 2;
 }
@@ -374,7 +375,7 @@ main {
   color: var(--text-color);
   border: none;
   width: 50%;
-  padding: 4px 0;
+  padding: 6px 0;
   background-image: var(--primary-color);
   border-radius: 4px;
 }
@@ -383,7 +384,8 @@ main .daftar-makanan {
   position: relative;
   margin-top: -2rem;
   background-color: var(--text-color);
-  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.5);
+  padding-bottom: 1rem;
+  /* box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.5); */
 }
 
 main .daftar-makanan .makanan {
@@ -432,7 +434,7 @@ main .daftar .kartu-makanan {
 main .daftar .kartu-makanan img {
   /* margin-bottom: 12px; */
   background: var(--primary-color);
-  height: 7rem;
+  height: 8rem;
   width: 100%;
   object-fit: cover;
   /* box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.5), 0 4px 5px 0 rgba(0, 0, 0, 0.2); */
@@ -442,11 +444,14 @@ main .daftar .kartu-makanan img {
   font-size: 12px;
   display: block;
   /* margin-bottom: 4px; */
-  margin: 4px;
+  margin: 6px 8px;
 }
 main .daftar .kartu-makanan .nama-makanan {
   font-weight: bold;
-  font-size: 16px;
+  font-size: 20px;
+}
+main .daftar .kartu-makanan .makanan-terjual {
+  font-size: 10px;
 }
 main .daftar .kartu-makanan .harga-makanan {
   font-size: 16px;
@@ -455,10 +460,8 @@ main .daftar .kartu-makanan .harga-makanan {
   background-image: var(--primary-color);
   text-align: center;
   margin: 0;
+  padding: 4px 0;
   margin-top: 12px;
-}
-main .daftar .kartu-makanan .makanan-terjual {
-  font-size: 10px;
 }
 
 .halaman {
@@ -468,8 +471,8 @@ main .daftar .kartu-makanan .makanan-terjual {
   bottom: -24px;
 }
 .halaman button {
-  width: 28px;
-  height: 28px;
+  width: 32px;
+  height: 32px;
   border-radius: 2px;
   display: inline-block;
 }
