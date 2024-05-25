@@ -513,7 +513,7 @@ footer {
   content: "";
   position: absolute;
   top: 32px;
-  left: 9rem;
+  left: 10rem;
   right: 14px;
   height: 2px;
   background-color: var(--text-color);
@@ -526,6 +526,7 @@ footer {
 }
 footer .copyright {
   font-size: 10px;
+  padding: 12px;
 }
 
 /* Media Screen atau Responsif */
