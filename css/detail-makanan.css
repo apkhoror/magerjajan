@@ -145,7 +145,7 @@ nav button.search i {
   width: 100%;
   /* background: var(--bg-color); */
   top: 4px;
-  padding: 4px;
+  padding: 4px 12px;
   box-sizing: border-box;
 }
 
@@ -180,7 +180,7 @@ header form {
   top: 2px;
   right: 2px;
   bottom: 2px;
-  padding: 4px 16px;
+  padding: 4px 24px;
   border-radius: 2px;
   border: none;
   cursor: pointer;
@@ -200,7 +200,7 @@ main {
   /* background-image: linear-gradient(#000, #222); */
 }
 .search-on {
-  top: 112px;
+  top: 108px;
   transition: 0.3s;
 }
 .menu-on {
@@ -210,7 +210,7 @@ main {
 
 main .detail-makanan {
   background-color: var(--text-color);
-  /* padding: 12px; */
+  padding: 12px;
 }
 
 main .detail-makanan .info-makanan {
@@ -244,14 +244,14 @@ main .detail-makanan .info-makanan {
 
 .info-makanan span:nth-child(1) {
   display: block;
-  font-size: 32px;
+  font-size: 24px;
   font-weight: bold;
   color: var(--text-black);
 }
 .info-makanan span:nth-child(2) {
   display: block;
   color: #dc143c;
-  font-size: 26px;
+  font-size: 20px;
   margin-bottom: 32px;
   font-weight: bold;
 }
@@ -260,7 +260,7 @@ main .detail-makanan .info-makanan {
   bottom: 0;
   font-weight: bold;
   color: #dc143c;
-  font-size: 16px;
+  font-size: 14px;
   /* text-decoration: underline; */
 }
 .info-makanan button {
@@ -276,14 +276,16 @@ main .detail-makanan .info-makanan {
 }
 
 .detail-makanan .deskripsi {
-  padding: 12px;
+  /* padding: 12px; */
   margin-top: 12px;
   color: var(--text-black);
 }
+
 .deskripsi p {
   color: var(--text-black);
   margin: 12px 0;
   text-align: justify;
+  line-height: 24px;
 }
 
 /* Komentar */

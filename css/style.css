@@ -145,7 +145,7 @@ nav button.search i {
   width: 100%;
   /* background: var(--bg-color); */
   top: 4px;
-  padding: 4px;
+  padding: 4px 12px;
   box-sizing: border-box;
 }
 
@@ -180,7 +180,7 @@ header form {
   top: 2px;
   right: 2px;
   bottom: 2px;
-  padding: 4px 16px;
+  padding: 4px 24px;
   border-radius: 2px;
   border: none;
   cursor: pointer;
