@@ -13,12 +13,13 @@
   --text-black: rgb(20, 20, 20);
   --text-color: #fefcff;
   --border-color: #93917c;
+  --bg-abu: #f3f3f3;
 }
 
 body {
   position: relative;
   box-sizing: border-box;
-  background-color: #d1d1d1;
+  background-color: var(--text-color);
 }
 
 header {
@@ -155,6 +156,7 @@ nav button.search i {
   box-sizing: border-box;
   border: none;
   border-radius: 2px;
+  box-shadow: 0 0 0 0.3px black;
 }
 
 .kotak-pencarian input:focus {
@@ -480,7 +482,7 @@ main .daftar .kartu-makanan .harga-makanan {
   width: 100%;
   text-align: center;
   position: relative;
-  bottom: -24px;
+  bottom: -12px;
 }
 .halaman button {
   width: 32px;

@@ -13,6 +13,7 @@
   --text-black: rgb(63, 63, 63);
   --text-color: #fefcff;
   --border-color: #93917c;
+  --bg-abu: #f3f3f3;
 }
 
 body {
@@ -192,7 +193,7 @@ header form {
 /* Main Konten */
 main {
   position: absolute;
-  top: 60px;
+  top: 59px;
   width: 100%;
   transition: 0.3s;
   z-index: 9;
@@ -291,7 +292,7 @@ main .detail-makanan .info-makanan {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  background-color: #f3f3f3;
+  background-color: var(--bg-abu);
 }
 
 .komentar-histori {
