@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mager Jajan</title>
+    <link rel="stylesheet" href="css/detail-makanan.css" />
+
+    <!-- icon google -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <button class="menu" onclick="toggleMenu()">
+          <i class="bx bx-menu"></i>
+        </button>
+        <h1><a href="index.html">MagerJajan</a></h1>
+        <button class="shop-bag">
+          <i class="bx bx-shopping-bag"></i>
+        </button>
+        <button onclick="toggleSearch()" class="search">
+          <i class="bx bx-search"></i>
+        </button>
+      </nav>
+
+      <!-- Kotak pencarian dan kotak menu -->
+      <div class="kotak-pencarian" id="kotakPencarian">
+        <form action="" method="get">
+          <input type="text" name="search" placeholder="cari makanan / minuman..." />
+          <button>Cari</button>
+        </form>
+      </div>
+
+      <div class="sidebar-menu">
+        <h5 href="">Belum punya akun?</h5>
+        <a href="">Daftar</a>
+        <a href="">Login</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="detail-makanan">
+        <div class="info-makanan">
+          <img src="img/bakso.jpg" alt="" />
+          <div class="nama-harga">
+            <span>Bakso Nyawa</span>
+            <span>Rp. 10.000</span>
+            <span>200+ Terjual</span>
+            <button id="beli">Beli</button>
+          </div>
+        </div>
+        <div class="deskripsi">
+          <h2>Deskripsi:</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, ullam. Id quas itaque maiores, aut vero reiciendis soluta porro veritatis incidunt rerum, eos odio? Optio molestiae facilis modi nesciunt sint! Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Non minima ab tempora. Excepturi neque omnis, temporibus sint est eos debitis ducimus?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem modi minima non nobis ratione laudantium, at culpa? Modi suscipit adipisci, dicta unde quos minima eius cupiditate quasi numquam maxime velit nemo officiis
+            temporibus praesentium, deserunt accusantium quia? Omnis, numquam quod!
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima, rerum rem quam veritatis reiciendis fuga atque eos nobis officiis reprehenderit illo illum, est culpa quos at ipsa ea odio inventore nihil ab. Nobis ipsum quos
+            nesciunt magnam? Qui ducimus quasi impedit quisquam fugit aliquid. Doloremque nostrum dolorum aliquam deleniti excepturi.
+          </p>
+        </div>
+      </section>
+
+      <div class="komentar">
+        <h2>94 Komentar</h2>
+        <!-- Komentar Orang Lain -->
+        <div class="komentar-histori">
+          <div class="info-komentar">
+            <img src="img/bakso.jpg" alt="" />
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis iure nesciunt corporis autem reiciendis dolore blanditiis quaerat unde.</p>
+          </div>
+          <div class="like-dislike">
+            <span><i class="bx bxs-like"></i> 500</span>
+            <span><i class="bx bxs-dislike"></i> 10</span>
+          </div>
+        </div>
+        <!-- Komentar Orang Lain -->
+        <div class="komentar-histori">
+          <div class="info-komentar">
+            <img src="img/bakso.jpg" alt="" />
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis iure nesciunt corporis autem reiciendis dolore blanditiis quaerat unde. Consequatur, cumque! Voluptas alias minima iure sint animi recusandae nobis fuga iusto.
+            </p>
+          </div>
+          <div class="like-dislike">
+            <span><i class="bx bxs-like"></i> 500</span>
+            <span><i class="bx bxs-dislike"></i> 10</span>
+          </div>
+        </div>
+        <div class="komentar-histori">
+          <div class="info-komentar">
+            <img src="img/bakso.jpg" alt="" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit nisi tempora non, voluptates quasi deserunt porro harum rerum facere expedita perspiciatis nulla culpa sequi quidem quibusdam molestias minima minus possimus
+              similique autem alias debitis suscipit, quod ducimus? Nisi adipisci reiciendis qui porro, eius deserunt veritatis cum et dicta placeat atque?
+            </p>
+          </div>
+          <div class="like-dislike">
+            <span><i class="bx bxs-like"></i> 500</span>
+            <span><i class="bx bxs-dislike"></i> 10</span>
+          </div>
+        </div>
+
+        <!-- Komentarmu -->
+        <div class="komentarmu">
+          <img src="img/sendz.jpg" alt="" />
+          <form action="">
+            <input type="text" name="komentar" id="komentar" placeholder="Komentarmu..." />
+            <button type="submit">Kirim</button>
+          </form>
+        </div>
+      </div>
+
+      <section class="daftar-makanan">
+        <div class="makanan">
+          <h3>Makanan Lainnya</h3>
+          <button>SEMUA</button>
+        </div>
+        <div class="daftar">
+          <div class="kartu-makanan">
+            <img src="img/bakso.jpg" alt="" />
+            <span class="nama-makanan">Bakso Nyawa</span>
+            <span class="makanan-terjual">5Rb+ Terjual</span>
+            <span class="harga-makanan">Rp. 10.000</span>
+          </div>
+          <div class="kartu-makanan">
+            <img src="img/sosis.jpg" alt="" />
+            <span class="nama-makanan">Sosis Bakar</span>
+            <span class="makanan-terjual">10Rb+ Terjual</span>
+            <span class="harga-makanan">Rp. 5.000</span>
+          </div>
+          <div class="kartu-makanan">
+            <img src="img/nasgor.jpg" alt="" />
+            <span class="nama-makanan">Nasgor</span>
+            <span class="makanan-terjual">1Rb+ Terjual</span>
+            <span class="harga-makanan">Rp. 10.000</span>
+          </div>
+          <div class="kartu-makanan">
+            <img src="img/kopi.jpg" alt="" />
+            <span class="nama-makanan">Kopi Hitam</span>
+            <span class="makanan-terjual">500+ Terjual</span>
+            <span class="harga-makanan">Rp. 3.000</span>
+          </div>
+          <div class="kartu-makanan">
+            <img src="img/sosis.jpg" alt="" />
+            <span class="nama-makanan">Sosis Bakar</span>
+            <span class="makanan-terjual">10Rb+ Terjual</span>
+            <span class="harga-makanan">Rp. 5.000</span>
+          </div>
+          <div class="kartu-makanan">
+            <img src="img/nasgor.jpg" alt="" />
+            <span class="nama-makanan">Nasgor</span>
+            <span class="makanan-terjual">1Rb+ Terjual</span>
+            <span class="harga-makanan">Rp. 10.000</span>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="judul-footer">
+          <h1>MagerJajan</h1>
+        </div>
+        <div class="detail-footer">
+          <p>
+            MagerJajan merupakan situs marketplace yang menyajikan makanan & minuman serba instan dengan mengedepankan kualitas citarasa yang cocok buat anak muda serta mengedepankan kecepatan pengiriman bagi yang mager jajan tapi pengen
+            jajan.
+          </p>
+          <br />
+          <p>Alamat resmi toko kami bisa anda kunjungi secara langsung di alamat <strong>Kp. Darajat, Desa Panggalih, Kecamatan Cisewu, Kabupaten Garut.</strong></p>
+        </div>
+        <p class="copyright">Created 2024 <i class="bx bxs-heart-circle"></i> By Sendzxx.</p>
+      </footer>
+    </main>
+
+    <script src="js/javascript.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  </body>
+</html>

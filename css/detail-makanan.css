@@ -1,0 +1,519 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Calibri, sans-serif;
+  border: none;
+  outline: none;
+  text-decoration: none;
+}
+
+:root {
+  --primary-color: linear-gradient(to right, #dc143c, #ff007f);
+  --bg-color: #000;
+  --text-black: rgb(63, 63, 63);
+  --text-color: #fefcff;
+  --border-color: #93917c;
+}
+
+body {
+  position: relative;
+  box-sizing: border-box;
+  background-color: var(--text-color);
+}
+
+header {
+  position: relative;
+}
+
+nav {
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  gap: 4px;
+  align-items: center;
+  width: 100%;
+  color: var(--text-color);
+  background: var(--primary-color);
+  box-sizing: border-box;
+  z-index: 1;
+  padding: 6px 0;
+  /* padding: 4px 6px; */
+}
+
+nav button {
+  cursor: pointer;
+  color: var(--text-color);
+  background: none;
+  padding: 8px 12px;
+  font-size: 26px;
+}
+
+nav .menu {
+  cursor: pointer;
+  margin-left: 4px;
+  /* flex-grow: 1; */
+  /* position: absolute;
+  left: 4px;
+  top: 4px; */
+}
+nav .menu i {
+  position: relative;
+  top: 2px;
+}
+header .sidebar-menu {
+  right: 0;
+  left: 0;
+  top: 0;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4px;
+  padding: 12px 8px;
+  /* padding-bottom: 12px; */
+  /* background-color: #e4e4e4; */
+}
+.sidebar-menu h5 {
+  color: #635e60;
+  /* text-shadow: 0 0 0 black; */
+  font-size: 10px;
+}
+.sidebar-menu a {
+  text-align: center;
+  font-size: 12px;
+  color: var(--text-color);
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 2px;
+}
+.sidebar-menu a:hover {
+  filter: grayscale(0.5);
+}
+.sidebar-menu a:nth-child(2) {
+  flex-grow: 5;
+  background-color: #258dd3;
+}
+.sidebar-menu a:nth-child(3) {
+  flex-grow: 1;
+  background-color: #25d366;
+}
+
+nav .shop-bag {
+  cursor: pointer;
+  /* flex-grow: 1; */
+  /* position: absolute;
+  right: 38px;
+  top: 4px; */
+}
+
+nav a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color);
+  text-decoration: none;
+  padding: 6px;
+}
+
+nav h1 {
+  background-color: var(--primary-color);
+  flex-grow: 6;
+  font-size: 28px;
+  /* padding: 4px; */
+}
+
+nav button.search {
+  /* right: 2px;
+  top: 4px;
+  position: absolute; */
+  /* flex-grow: 1; */
+  margin-right: 4px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: all 0.3 ease;
+}
+
+nav button.search i {
+  position: relative;
+  top: 2px;
+}
+
+.kotak-pencarian {
+  position: relative;
+  width: 100%;
+  /* background: var(--bg-color); */
+  top: 4px;
+  padding: 4px;
+  box-sizing: border-box;
+}
+
+.kotak-pencarian input {
+  color: #2e1b25;
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: none;
+  box-shadow: 0 0 0 0.3px black;
+  border-radius: 2px;
+}
+
+.kotak-pencarian input:focus {
+  outline: none;
+  /* box-shadow: 0 0 1px 0 #ff369b; */
+  /* color: #420021; */
+}
+.kotak-pencarian input::placeholder {
+  color: rgba(66, 0, 33, 0.5);
+}
+
+header form {
+  position: relative;
+}
+
+.kotak-pencarian button {
+  color: var(--text-color);
+  background-color: #ff007f;
+  font-size: 12px;
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  bottom: 2px;
+  padding: 4px 16px;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+}
+
+.kotak-pencarian button:hover {
+  background-color: #ff369b;
+}
+
+/* Main Konten */
+main {
+  position: absolute;
+  top: 60px;
+  width: 100%;
+  transition: 0.3s;
+  z-index: 9;
+  /* background-image: linear-gradient(#000, #222); */
+}
+.search-on {
+  top: 112px;
+  transition: 0.3s;
+}
+.menu-on {
+  top: 154px;
+  transition: 0.3s;
+}
+
+main .detail-makanan {
+  background-color: var(--text-color);
+  /* padding: 12px; */
+}
+
+main .detail-makanan .info-makanan {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* gap: 12px; */
+  background-color: #f3f3f3;
+  padding-bottom: 12px;
+  width: 100%;
+  box-sizing: border-box;
+  /* border-radius: 4px; */
+  overflow: hidden;
+  /* box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2), 0 0 4px 0 rgba(0, 0, 0, 0.2); */
+  /* border-bottom: 1px solid var(--border-color); */
+}
+.info-makanan img {
+  width: 100%;
+  /* border-bottom: 1px solid var(--border-color); */
+}
+
+.info-makanan .nama-harga {
+  position: relative;
+  /* margin-top: 12px; */
+  padding: 12px;
+  /* background-color: var(--text-color); */
+  /* padding: 12px; */
+  /* border-bottom: 1px solid var(--border-color); */
+}
+
+.info-makanan span:nth-child(1) {
+  display: block;
+  font-size: 32px;
+  font-weight: bold;
+  color: var(--text-black);
+}
+.info-makanan span:nth-child(2) {
+  display: block;
+  color: #dc143c;
+  font-size: 26px;
+  margin-bottom: 32px;
+  font-weight: bold;
+}
+.info-makanan span:nth-child(3) {
+  position: absolute;
+  bottom: 0;
+  font-weight: bold;
+  color: #dc143c;
+  font-size: 16px;
+  /* text-decoration: underline; */
+}
+.info-makanan button {
+  right: 12px;
+  bottom: 0;
+  position: absolute;
+  align-self: flex-end;
+  background-image: var(--primary-color);
+  padding: 6px 54px;
+  font-size: 20px;
+  color: var(--text-color);
+  border-radius: 2px;
+}
+
+.detail-makanan .deskripsi {
+  padding: 12px;
+  margin-top: 12px;
+  color: var(--text-black);
+}
+.deskripsi p {
+  color: var(--text-black);
+  margin: 12px 0;
+  text-align: justify;
+}
+
+/* Komentar */
+.komentar {
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: #f3f3f3;
+}
+
+.komentar-histori {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 14px;
+  padding-bottom: 12px;
+  border-bottom: 1px dashed var(--border-color);
+  padding: 12px;
+}
+.komentar-histori .info-komentar {
+  display: flex;
+  text-align: justify;
+  gap: 12px;
+}
+.komentar-histori .like-dislike {
+  font-size: 12px;
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+}
+
+.komentar .komentarmu {
+  display: flex;
+  justify-content: space-evenly;
+  /* align-items: center; */
+  gap: 12px;
+}
+.komentar img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.komentar form {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.komentar form input {
+  width: 100%;
+  height: 42px;
+  padding: 0 14px;
+  box-sizing: border-box;
+  margin: 4px 0;
+  border-radius: 2px;
+  box-shadow: 0 0 0 0.3px black;
+}
+.komentar form button {
+  padding: 4px 16px;
+  color: var(--text-color);
+  border-radius: 2px;
+  align-self: flex-end;
+  background-image: var(--primary-color);
+}
+
+/* Akhir Komentar */
+
+main .daftar-makanan {
+  background-color: var(--text-color);
+  padding-bottom: 2rem;
+  /* box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.5); */
+}
+
+main .daftar-makanan .makanan {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+}
+
+.makanan h3 {
+  font-size: 24px;
+  color: var(--text-black);
+  align-self: flex-start;
+}
+.makanan h3::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 72px;
+  background-image: var(--primary-color);
+  margin-left: 2px;
+  /* transform: rotate(-60deg); */
+  /* transform: translateX(12px); */
+}
+
+.makanan button {
+  border: none;
+  border-radius: 2px;
+  color: var(--text-color);
+  background-image: var(--primary-color);
+  font-size: 12px;
+  padding: 4px 12px;
+}
+
+main .daftar {
+  display: flex;
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
+  gap: 12px;
+  padding: 12px;
+  flex-wrap: wrap;
+}
+
+main .daftar .kartu-makanan {
+  background-color: var(--text-color);
+  border: 1px solid rgba(147, 145, 124, 0.3);
+  flex-grow: 1;
+  /* padding: 12px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: calc(50% - 12px);
+  /* height: 12rem; */
+}
+
+main .daftar .kartu-makanan img {
+  /* margin-bottom: 12px; */
+  background: var(--primary-color);
+  height: 8rem;
+  width: 100%;
+  object-fit: cover;
+  /* box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.5), 0 4px 5px 0 rgba(0, 0, 0, 0.2); */
+  /* border-radius: 2px; */
+}
+.daftar .kartu-makanan span {
+  font-size: 12px;
+  display: block;
+  /* margin-bottom: 4px; */
+  color: var(--text-black);
+  margin: 6px 8px;
+}
+main .daftar .kartu-makanan .nama-makanan {
+  color: var(--text-black);
+  font-weight: bold;
+  font-size: 20px;
+}
+main .daftar .kartu-makanan .makanan-terjual {
+  font-size: 10px;
+}
+main .daftar .kartu-makanan .harga-makanan {
+  font-size: 16px;
+  color: var(--text-color);
+  box-sizing: border-box;
+  background-image: var(--primary-color);
+  text-align: center;
+  margin: 0;
+  padding: 4px 0;
+  margin-top: 12px;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  /* height: 14rem; */
+  /* margin-top: -3.5rem; */
+  background-color: #222;
+  font-size: 12px;
+  color: gray;
+  text-align: center;
+  padding: 1rem 14px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: space-around;
+  z-index: 100;
+}
+.judul-footer {
+  text-align: start;
+  color: var(--text-color);
+}
+
+.judul-footer h1::after {
+  display: block;
+  content: "";
+  /* position: absolute;
+  top: 32px;
+  left: 10rem;
+  right: 14px;
+  height: 2px; */
+  width: 55%;
+  float: right;
+  margin-top: 16px;
+  height: 2px;
+  background-color: var(--text-color);
+  color: var(--text-color);
+}
+
+.detail-footer p {
+  text-align: start;
+  line-height: 16px;
+  text-align: justify;
+}
+footer .copyright {
+  font-size: 10px;
+  padding: 16px;
+}
+
+/* Media Screen atau Responsif */
+@media screen and (min-width: 800px) {
+  body,
+  header,
+  main {
+    width: 100%;
+    margin: 0 auto;
+  }
+  body {
+    width: 80%;
+    background-color: var(--border-color);
+  }
+  .konten .kotak-unggulan .unggulan::-webkit-scrollbar {
+    display: none;
+  }
+  main {
+    background-color: #d1d1d1;
+  }
+  footer {
+    /* margin-top: -4rem; */
+    z-index: 100;
+  }
+}
