@@ -71,7 +71,7 @@ header .sidebar-menu {
   justify-content: space-between;
   align-items: center;
   gap: 4px;
-  padding: 12px 8px;
+  padding: 12px;
   /* padding-bottom: 12px; */
   /* background-color: #e4e4e4; */
 }
