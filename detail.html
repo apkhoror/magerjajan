@@ -42,16 +42,30 @@
     <main>
       <section class="detail-makanan">
         <div class="info-makanan">
-          <img src="img/bakso.jpg" alt="" />
+          <div class="info-image">
+            <div class="thumbnail-besar">
+              <img src="img/bakso.jpg" alt="" />
+            </div>
+            <div class="thumbnail-kecil">
+              <img src="img/bakso.jpg" alt="" />
+              <img src="img/nasgor.jpg" alt="" />
+              <img src="img/sosis.jpg" alt="" />
+              <img src="img/nasgor.jpg" alt="" />
+              <img src="img/sosis.jpg" alt="" />
+            </div>
+          </div>
+
           <div class="nama-harga">
+            <span>Rp. 14.000,-</span>
             <span>Bakso Nyawa</span>
-            <span>Rp. 10.000</span>
             <span>200+ Terjual</span>
-            <button id="beli">Beli</button>
+            <button id="beli">Beli Sekarang</button>
+            <button id="keranjang">Masukan ke keranjang</button>
           </div>
         </div>
+
         <div class="deskripsi">
-          <h2>Deskripsi:</h2>
+          <h2>[ Deskripsi ]</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, ullam. Id quas itaque maiores, aut vero reiciendis soluta porro veritatis incidunt rerum, eos odio? Optio molestiae facilis modi nesciunt sint! Lorem ipsum dolor sit
             amet consectetur adipisicing elit. Non minima ab tempora. Excepturi neque omnis, temporibus sint est eos debitis ducimus?
@@ -67,60 +81,53 @@
         </div>
       </section>
 
-      <div class="komentar">
-        <h2>94 Komentar</h2>
+      <!-- Section Komentar -->
+      <section class="komentar">
+        <h2>4 Komentar</h2>
         <!-- Komentar Orang Lain -->
         <div class="komentar-histori">
+          <div class="nama-komentar"></div>
           <div class="info-komentar">
             <img src="img/bakso.jpg" alt="" />
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis iure nesciunt corporis autem reiciendis dolore blanditiis quaerat unde.</p>
+
+            <div class="isi-komentar">
+              <div class="komentator">
+                <span>Senda</span>
+                <span>2 hari yang lalu</span>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat facere beatae distinctio temporibus iste. Aliquid sunt, quia tempore quidem provident eum eligendi qui similique assumenda, corrupti nihil hic cupiditate
+                harum.
+              </p>
+            </div>
           </div>
-          <div class="like-dislike">
-            <span><i class="bx bxs-like"></i> 500</span>
-            <span><i class="bx bxs-dislike"></i> 10</span>
-          </div>
-        </div>
-        <!-- Komentar Orang Lain -->
-        <div class="komentar-histori">
-          <div class="info-komentar">
-            <img src="img/bakso.jpg" alt="" />
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis iure nesciunt corporis autem reiciendis dolore blanditiis quaerat unde. Consequatur, cumque! Voluptas alias minima iure sint animi recusandae nobis fuga iusto.
-            </p>
-          </div>
-          <div class="like-dislike">
-            <span><i class="bx bxs-like"></i> 500</span>
-            <span><i class="bx bxs-dislike"></i> 10</span>
-          </div>
-        </div>
-        <div class="komentar-histori">
-          <div class="info-komentar">
-            <img src="img/bakso.jpg" alt="" />
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit nisi tempora non, voluptates quasi deserunt porro harum rerum facere expedita perspiciatis nulla culpa sequi quidem quibusdam molestias minima minus possimus
-              similique autem alias debitis suscipit, quod ducimus? Nisi adipisci reiciendis qui porro, eius deserunt veritatis cum et dicta placeat atque?
-            </p>
-          </div>
-          <div class="like-dislike">
-            <span><i class="bx bxs-like"></i> 500</span>
-            <span><i class="bx bxs-dislike"></i> 10</span>
+          <div class="like">
+            <span><i class="bx bxs-like"></i> 25</span>
           </div>
         </div>
 
         <!-- Komentarmu -->
         <div class="komentarmu">
-          <img src="img/sendz.jpg" alt="" />
+          <div class="profile">
+            <img src="img/sendz.jpg" alt="" />
+            <span>[ XNSENDZXX ]</span>
+          </div>
           <form action="">
             <input type="text" name="komentar" id="komentar" placeholder="Komentarmu..." />
-            <button type="submit">Kirim</button>
+            <button type="submit">Komentar</button>
           </form>
         </div>
+      </section>
+
+      <!-- Section Pemisah -->
+      <div class="pemisah">
+        <span></span>
       </div>
 
+      <!-- Section Daftar makanan terkait -->
       <section class="daftar-makanan">
         <div class="makanan">
           <h3>Makanan Lainnya</h3>
-          <button>SEMUA</button>
         </div>
         <div class="daftar">
           <div class="kartu-makanan">

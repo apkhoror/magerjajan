@@ -9,6 +9,7 @@
 
 :root {
   --primary-color: linear-gradient(to right, #dc143c, #ff007f);
+  --color-merah: #dc143c;
   --bg-color: #000;
   --text-black: rgb(63, 63, 63);
   --text-color: #fefcff;
@@ -208,9 +209,9 @@ main {
   transition: 0.3s;
 }
 
+/* Awal detail makanan */
 main .detail-makanan {
   background-color: var(--text-color);
-  padding: 12px;
 }
 
 main .detail-makanan .info-makanan {
@@ -219,7 +220,7 @@ main .detail-makanan .info-makanan {
   flex-direction: column;
   /* align-items: center; */
   /* gap: 12px; */
-  background-color: #f3f3f3;
+  /* background-color: #f3f3f3; */
   padding-bottom: 12px;
   width: 100%;
   box-sizing: border-box;
@@ -228,56 +229,92 @@ main .detail-makanan .info-makanan {
   /* box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2), 0 0 4px 0 rgba(0, 0, 0, 0.2); */
   /* border-bottom: 1px solid var(--border-color); */
 }
-.info-makanan img {
+.info-makanan .info-image {
   width: 100%;
+}
+.info-makanan .info-image .thumbnail-besar {
+  width: 100%;
+  box-sizing: border-box;
+}
+.info-makanan .info-image .thumbnail-besar img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
   /* border-bottom: 1px solid var(--border-color); */
+}
+.info-image .thumbnail-kecil {
+  /* width: 100%; */
+  box-sizing: border-box;
+  display: flex;
+  padding: 12px 4px;
+  gap: 4px;
+  justify-content: flex-start;
+  overflow: auto;
+  /* border-top: 1px solid var(--border-color); */
+  /* box-shadow: 0 1px 0 1px var(--border-color), 0 2px 0.3px 0 var(--border-color); */
+}
+.thumbnail-kecil img {
+  width: 3.5rem;
+  background-size: cover;
+  border-radius: 4px;
 }
 
 .info-makanan .nama-harga {
   position: relative;
   /* margin-top: 12px; */
-  padding: 12px;
+  /* padding: 0 12px; */
   /* background-color: var(--text-color); */
   /* padding: 12px; */
   /* border-bottom: 1px solid var(--border-color); */
+  /* padding-bottom: 12px; */
+  text-align: center;
 }
 
 .info-makanan span:nth-child(1) {
+  text-align: start;
   display: block;
   font-size: 24px;
   font-weight: bold;
-  color: var(--text-black);
+  color: #dc143c;
+  padding: 0 12px;
 }
 .info-makanan span:nth-child(2) {
+  text-align: start;
+  color: var(--text-black);
   display: block;
-  color: #dc143c;
+  padding: 0 12px;
   font-size: 20px;
-  margin-bottom: 32px;
   font-weight: bold;
+  padding-bottom: 12px;
+  margin-bottom: 12px;
 }
 .info-makanan span:nth-child(3) {
   position: absolute;
-  bottom: 0;
+  right: 16px;
+  top: 2px;
   font-weight: bold;
   color: #dc143c;
   font-size: 14px;
-  /* text-decoration: underline; */
+  text-decoration: underline;
 }
 .info-makanan button {
-  right: 12px;
-  bottom: 0;
-  position: absolute;
-  align-self: flex-end;
-  background-image: var(--primary-color);
-  padding: 6px 54px;
+  width: 94%;
+  padding: 8px 12px;
+  box-sizing: border-box;
   font-size: 20px;
   color: var(--text-color);
   border-radius: 2px;
 }
+.info-makanan #beli {
+  margin-bottom: 5px;
+  background-image: var(--primary-color);
+}
+.info-makanan #keranjang {
+  background-color: #258dd3;
+}
 
 .detail-makanan .deskripsi {
-  /* padding: 12px; */
-  margin-top: 12px;
+  padding: 12px;
   color: var(--text-black);
 }
 
@@ -287,6 +324,7 @@ main .detail-makanan .info-makanan {
   text-align: justify;
   line-height: 24px;
 }
+/* Akhir detail makanan */
 
 /* Komentar */
 .komentar {
@@ -294,7 +332,13 @@ main .detail-makanan .info-makanan {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  background-color: var(--bg-abu);
+  /* background-color: var(--bg-abu); */
+}
+.komentar img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px 2px var(--bg-abu);
 }
 
 .komentar-histori {
@@ -302,35 +346,62 @@ main .detail-makanan .info-makanan {
   flex-direction: column;
   gap: 12px;
   font-size: 14px;
-  padding-bottom: 12px;
-  border-bottom: 1px dashed var(--border-color);
-  padding: 12px;
+  /* padding-bottom: 12px; */
+  /* border-bottom: 1px dashed var(--border-color); */
+  /* padding: 12px; */
 }
 .komentar-histori .info-komentar {
   display: flex;
   text-align: justify;
   gap: 12px;
 }
-.komentar-histori .like-dislike {
-  font-size: 12px;
+.info-komentar .isi-komentar {
+  background-color: var(--bg-abu);
+  padding: 12px;
+  border-radius: 4px;
+}
+.isi-komentar .komentator {
   display: flex;
-  gap: 12px;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 14px;
+  color: var(--color-merah);
+  padding-bottom: 6px;
+}
+.isi-komentar span:nth-child(1) {
+  font-size: 16px;
+}
+.isi-komentar span:nth-child(2) {
+  font-size: 12px;
+}
+.komentar-histori .info-komentar p {
+  font-size: 12px;
+  line-height: 16px;
+}
+.komentar-histori .like {
+  font-size: 14px;
+  text-align: end;
 }
 
+/* Komentar kamu */
 .komentar .komentarmu {
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
   /* align-items: center; */
   gap: 12px;
 }
-.komentar img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
+.komentarmu .profile {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--color-merah);
 }
+
 .komentar form {
-  width: 80%;
+  width: 100%;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -346,7 +417,7 @@ main .detail-makanan .info-makanan {
   box-shadow: 0 0 0 0.3px black;
 }
 .komentar form button {
-  padding: 4px 16px;
+  padding: 8px 16px;
   color: var(--text-color);
   border-radius: 2px;
   align-self: flex-end;
@@ -355,6 +426,25 @@ main .detail-makanan .info-makanan {
 
 /* Akhir Komentar */
 
+/* Pemisah */
+.pemisah {
+  /* width: 100%; */
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+  padding: 12px;
+  box-sizing: border-box;
+}
+.pemisah span {
+  text-align: center;
+  display: block;
+  width: 80%;
+  height: 2px;
+  background-image: var(--primary-color);
+}
+/* Akhir Pemisah */
+
+/* Daftar makanan terkait */
 main .daftar-makanan {
   background-color: var(--text-color);
   padding-bottom: 2rem;
@@ -383,25 +473,18 @@ main .daftar-makanan .makanan {
   /* transform: translateX(12px); */
 }
 
-.makanan button {
-  border: none;
-  border-radius: 2px;
-  color: var(--text-color);
-  background-image: var(--primary-color);
-  font-size: 12px;
-  padding: 4px 12px;
-}
-
 main .daftar {
   display: flex;
   justify-content: space-between;
   /* flex-wrap: wrap; */
-  gap: 12px;
-  padding: 12px;
+  gap: 6px;
+  padding: 6px;
   flex-wrap: wrap;
 }
 
 main .daftar .kartu-makanan {
+  border-radius: 10px;
+  overflow: hidden;
   background-color: var(--text-color);
   border: 1px solid rgba(147, 145, 124, 0.3);
   flex-grow: 1;
@@ -420,6 +503,7 @@ main .daftar .kartu-makanan img {
   height: 8rem;
   width: 100%;
   object-fit: cover;
+
   /* box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.5), 0 4px 5px 0 rgba(0, 0, 0, 0.2); */
   /* border-radius: 2px; */
 }

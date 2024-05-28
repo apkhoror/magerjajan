@@ -10,6 +10,7 @@
 :root {
   --primary-color: linear-gradient(to right, #dc143c, #ff007f);
   --bg-color: #000;
+  --color-merah: #dc143c;
   --text-black: rgb(20, 20, 20);
   --text-color: #fefcff;
   --border-color: #93917c;
@@ -283,7 +284,7 @@ main {
   padding-bottom: 0.5rem;
   width: 100%;
   flex-wrap: nowrap;
-  overflow-x: scroll;
+  overflow-x: auto;
   position: relative;
 }
 
@@ -310,11 +311,12 @@ main {
 .kotak-unggulan .gambar {
   position: relative;
 }
-.kotak-unggulan .gambar::after {
+.kotak-unggulan a::after {
+  border-radius: 4px;
   content: "";
   position: absolute;
-  top: 60px;
-  bottom: 24px;
+  top: 70px;
+  bottom: 34px;
   right: 0;
   left: 0;
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
@@ -378,16 +380,16 @@ main {
   color: var(--text-color);
   border: none;
   width: 50%;
-  padding: 6px 0;
+  padding: 8px 0;
   background-image: var(--primary-color);
   border-radius: 4px;
 }
 
 main .daftar-makanan {
-  position: relative;
-  margin-top: -2rem;
   background-color: var(--text-color);
   padding-bottom: 1rem;
+  margin-top: -1.5rem;
+
   /* box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.5); */
 }
 
@@ -399,7 +401,7 @@ main .daftar-makanan .makanan {
 
 .makanan h3 {
   font-size: 24px;
-  color: var(--bg-color);
+  color: var(--text-black);
   align-self: flex-start;
 }
 .makanan h3::after {
@@ -413,25 +415,18 @@ main .daftar-makanan .makanan {
   /* transform: translateX(12px); */
 }
 
-.makanan button {
-  border: none;
-  border-radius: 2px;
-  color: var(--text-color);
-  background-image: var(--primary-color);
-  font-size: 12px;
-  padding: 4px 12px;
-}
-
 main .daftar {
   display: flex;
   justify-content: space-between;
   /* flex-wrap: wrap; */
-  gap: 12px;
-  padding: 12px;
+  gap: 6px;
+  padding: 6px;
   flex-wrap: wrap;
 }
 
 main .daftar .kartu-makanan {
+  border-radius: 10px;
+  overflow: hidden;
   background-color: var(--text-color);
   border: 1px solid rgba(147, 145, 124, 0.3);
   flex-grow: 1;
@@ -450,6 +445,7 @@ main .daftar .kartu-makanan img {
   height: 8rem;
   width: 100%;
   object-fit: cover;
+
   /* box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.5), 0 4px 5px 0 rgba(0, 0, 0, 0.2); */
   /* border-radius: 2px; */
 }
@@ -457,6 +453,7 @@ main .daftar .kartu-makanan img {
   font-size: 12px;
   display: block;
   /* margin-bottom: 4px; */
+  color: var(--text-black);
   margin: 6px 8px;
 }
 main .daftar .kartu-makanan .nama-makanan {
