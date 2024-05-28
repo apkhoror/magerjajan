@@ -310,13 +310,15 @@ main {
 
 .kotak-unggulan .gambar {
   position: relative;
+  margin-bottom: 16px;
+  border-radius: 4px;
 }
 .kotak-unggulan a::after {
   border-radius: 4px;
   content: "";
   position: absolute;
   top: 70px;
-  bottom: 34px;
+  bottom: 32px;
   right: 0;
   left: 0;
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
@@ -358,21 +360,25 @@ main {
 }
 
 .kotak-unggulan .unggulan img {
-  height: 9rem;
+  height: 7rem;
   width: 6.5rem;
   border-radius: 4px;
   object-fit: cover;
 }
-.kotak-unggulan .unggulan p {
+.kotak-unggulan .unggulan span.nama-harga-makanan {
+  display: block;
   text-align: center;
   position: relative;
   color: var(--text-color);
   /* left: 50%; */
-  bottom: 48px;
+  /* bottom: 48px; */
   font-size: 12px;
-  margin-bottom: 2px;
   /* font-weight: bold; */
   z-index: 2;
+}
+.unggulan span.nama-harga-makanan:last-child {
+  margin-top: 4px;
+  font-weight: bold;
 }
 
 .kotak-unggulan .lihat-semua {
@@ -441,10 +447,13 @@ main .daftar .kartu-makanan {
 
 main .daftar .kartu-makanan img {
   /* margin-bottom: 12px; */
-  background: var(--primary-color);
-  height: 8rem;
+  /* background: var(--primary-color); */
+  height: 10rem;
   width: 100%;
   object-fit: cover;
+  padding: 8px;
+  box-sizing: border-box;
+  border-radius: 14px;
 
   /* box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.5), 0 4px 5px 0 rgba(0, 0, 0, 0.2); */
   /* border-radius: 2px; */
@@ -454,7 +463,7 @@ main .daftar .kartu-makanan img {
   display: block;
   /* margin-bottom: 4px; */
   color: var(--text-black);
-  margin: 6px 8px;
+  margin: 2px 8px;
 }
 main .daftar .kartu-makanan .nama-makanan {
   color: var(--text-black);
@@ -462,7 +471,9 @@ main .daftar .kartu-makanan .nama-makanan {
   font-size: 20px;
 }
 main .daftar .kartu-makanan .makanan-terjual {
-  font-size: 10px;
+  font-size: 12px;
+  text-decoration: underline;
+  color: var(--color-merah);
 }
 main .daftar .kartu-makanan .harga-makanan {
   font-size: 16px;
@@ -471,7 +482,7 @@ main .daftar .kartu-makanan .harga-makanan {
   background-image: var(--primary-color);
   text-align: center;
   margin: 0;
-  padding: 4px 0;
+  padding: 8px 0;
   margin-top: 12px;
 }
 
@@ -499,7 +510,7 @@ main .daftar .kartu-makanan .harga-makanan {
 
 footer {
   position: relative;
-  bottom: -54px;
+  bottom: -59px;
   width: 100%;
   /* height: 14rem; */
   /* margin-top: -3.5rem; */

@@ -240,13 +240,16 @@ main .detail-makanan .info-makanan {
   width: 100%;
   height: 100%;
   background-size: cover;
+  padding: 12px;
+  padding-bottom: 0;
+  box-sizing: border-box;
   /* border-bottom: 1px solid var(--border-color); */
 }
 .info-image .thumbnail-kecil {
   /* width: 100%; */
   box-sizing: border-box;
   display: flex;
-  padding: 12px 4px;
+  padding: 12px 12px;
   gap: 4px;
   justify-content: flex-start;
   overflow: auto;
@@ -255,7 +258,7 @@ main .detail-makanan .info-makanan {
 }
 .thumbnail-kecil img {
   width: 3.5rem;
-  background-size: cover;
+  object-fit: cover;
   border-radius: 4px;
 }
 
@@ -438,7 +441,7 @@ main .detail-makanan .info-makanan {
 .pemisah span {
   text-align: center;
   display: block;
-  width: 80%;
+  width: 50%;
   height: 2px;
   background-image: var(--primary-color);
 }
@@ -500,7 +503,7 @@ main .daftar .kartu-makanan {
 main .daftar .kartu-makanan img {
   /* margin-bottom: 12px; */
   background: var(--primary-color);
-  height: 8rem;
+  height: 10rem;
   width: 100%;
   object-fit: cover;
 
@@ -529,7 +532,7 @@ main .daftar .kartu-makanan .harga-makanan {
   background-image: var(--primary-color);
   text-align: center;
   margin: 0;
-  padding: 4px 0;
+  padding: 8px 0;
   margin-top: 12px;
 }
 
