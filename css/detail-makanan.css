@@ -526,14 +526,14 @@ main .daftar .kartu-makanan .nama-makanan {
 main .daftar .kartu-makanan .makanan-terjual {
   font-size: 10px;
   order: 3;
-  padding-bottom: 4px;
+  padding-bottom: 6px;
 }
 main .daftar .kartu-makanan .harga-makanan {
   font-size: 20px;
   color: var(--color-merah);
   box-sizing: border-box;
   font-weight: bold;
-  margin-top: -4px;
+  /* margin-top: -4px; */
   /* background-image: var(--primary-color); */
   /* text-align: center; */
   /* margin: 0; */
