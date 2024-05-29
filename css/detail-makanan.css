@@ -324,6 +324,7 @@ main .detail-makanan .info-makanan {
 .deskripsi p {
   color: var(--text-black);
   margin: 12px 0;
+  font-size: 14px;
   text-align: justify;
   line-height: 24px;
 }
@@ -486,7 +487,7 @@ main .daftar {
 }
 
 main .daftar .kartu-makanan {
-  border-radius: 10px;
+  /* border-radius: 10px; */
   overflow: hidden;
   background-color: var(--text-color);
   border: 1px solid rgba(147, 145, 124, 0.3);
@@ -515,25 +516,29 @@ main .daftar .kartu-makanan img {
   display: block;
   /* margin-bottom: 4px; */
   color: var(--text-black);
-  margin: 6px 8px;
+  margin: 4px 8px;
 }
 main .daftar .kartu-makanan .nama-makanan {
   color: var(--text-black);
   font-weight: bold;
-  font-size: 20px;
+  font-size: 16px;
 }
 main .daftar .kartu-makanan .makanan-terjual {
   font-size: 10px;
+  order: 3;
+  padding-bottom: 4px;
 }
 main .daftar .kartu-makanan .harga-makanan {
-  font-size: 16px;
-  color: var(--text-color);
+  font-size: 20px;
+  color: var(--color-merah);
   box-sizing: border-box;
-  background-image: var(--primary-color);
-  text-align: center;
-  margin: 0;
-  padding: 8px 0;
-  margin-top: 12px;
+  font-weight: bold;
+  margin-top: -4px;
+  /* background-image: var(--primary-color); */
+  /* text-align: center; */
+  /* margin: 0; */
+  /* padding: 8px 0; */
+  /* margin-top: 12px; */
 }
 
 footer {

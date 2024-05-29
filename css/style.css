@@ -382,7 +382,7 @@ main {
   z-index: 2;
 }
 .unggulan span.nama-harga-makanan:last-child {
-  margin-top: 4px;
+  padding-top: 4px;
   font-weight: bold;
 }
 
@@ -473,7 +473,7 @@ main .daftar .kartu-makanan img {
 main .daftar .kartu-makanan .nama-makanan {
   color: var(--text-black);
   font-weight: bold;
-  font-size: 18px;
+  font-size: 16px;
 }
 main .daftar .kartu-makanan .makanan-terjual {
   font-size: 10px;
@@ -481,7 +481,7 @@ main .daftar .kartu-makanan .makanan-terjual {
 }
 main .daftar .kartu-makanan .harga-makanan {
   font-size: 20px;
-  text-decoration: underline;
+  /* text-decoration: underline; */
   /* color: var(--text-color); */
   color: var(--color-merah);
   box-sizing: border-box;
