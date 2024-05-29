@@ -11,7 +11,7 @@
   --primary-color: linear-gradient(to right, #dc143c, #ff007f);
   --bg-color: #000;
   --color-merah: #dc143c;
-  --text-black: rgb(20, 20, 20);
+  --text-black: rgb(39, 39, 39);
   --text-color: #fefcff;
   --border-color: #93917c;
   --bg-abu: #f3f3f3;
@@ -20,7 +20,7 @@
 body {
   position: relative;
   box-sizing: border-box;
-  background-color: var(--text-color);
+  background-color: var(--bg-abu);
 }
 
 header {
@@ -116,11 +116,13 @@ nav a {
   color: var(--text-color);
   text-decoration: none;
   padding: 6px;
+  flex-grow: 2;
+  /* margin-left: 12px; */
 }
 
 nav h1 {
   background-color: var(--primary-color);
-  flex-grow: 6;
+  /* flex-grow: 6; */
   font-size: 28px;
   /* padding: 4px; */
 }
@@ -161,7 +163,7 @@ nav button.search i {
 }
 
 .kotak-pencarian input:focus {
-  outline: none;
+  outline: 0.5px solid rgb(56, 56, 56);
   /* box-shadow: 0 0 1px 0 #ff369b; */
   /* color: #420021; */
 }
@@ -287,6 +289,9 @@ main {
   overflow-x: auto;
   position: relative;
 }
+.kotak-unggulan .unggulan::-webkit-scrollbar {
+  display: none;
+}
 
 /* .kotak-unggulan .unggulan .pengumuman {
   text-wrap: nowrap;
@@ -392,9 +397,9 @@ main {
 }
 
 main .daftar-makanan {
-  background-color: var(--text-color);
+  background-color: var(--bg-abu);
   padding-bottom: 1rem;
-  margin-top: -1.5rem;
+  margin-top: -32px;
 
   /* box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.5); */
 }
@@ -402,7 +407,7 @@ main .daftar-makanan {
 main .daftar-makanan .makanan {
   display: flex;
   justify-content: space-between;
-  padding: 12px;
+  padding: 12px 6px;
 }
 
 .makanan h3 {
@@ -431,12 +436,12 @@ main .daftar {
 }
 
 main .daftar .kartu-makanan {
-  border-radius: 10px;
+  /* border-radius: 10px; */
   overflow: hidden;
   background-color: var(--text-color);
   border: 1px solid rgba(147, 145, 124, 0.3);
   flex-grow: 1;
-  /* padding: 12px; */
+  padding-bottom: 16px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -451,9 +456,9 @@ main .daftar .kartu-makanan img {
   height: 10rem;
   width: 100%;
   object-fit: cover;
-  padding: 8px;
+  /* padding: 8px; */
   box-sizing: border-box;
-  border-radius: 14px;
+  /* border-radius: 14px; */
 
   /* box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.5), 0 4px 5px 0 rgba(0, 0, 0, 0.2); */
   /* border-radius: 2px; */
@@ -463,27 +468,30 @@ main .daftar .kartu-makanan img {
   display: block;
   /* margin-bottom: 4px; */
   color: var(--text-black);
-  margin: 2px 8px;
+  margin: 4px 8px;
 }
 main .daftar .kartu-makanan .nama-makanan {
   color: var(--text-black);
   font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
 }
 main .daftar .kartu-makanan .makanan-terjual {
-  font-size: 12px;
-  text-decoration: underline;
-  color: var(--color-merah);
+  font-size: 10px;
+  order: 3;
 }
 main .daftar .kartu-makanan .harga-makanan {
-  font-size: 16px;
-  color: var(--text-color);
+  font-size: 20px;
+  text-decoration: underline;
+  /* color: var(--text-color); */
+  color: var(--color-merah);
   box-sizing: border-box;
-  background-image: var(--primary-color);
-  text-align: center;
-  margin: 0;
-  padding: 8px 0;
-  margin-top: 12px;
+  font-weight: bold;
+  margin-top: -2px;
+  /* background-image: var(--primary-color); */
+  /* text-align: center; */
+  /* margin: 0; */
+  /* padding: 8px 0; */
+  /* margin-top: 12px; */
 }
 
 .halaman {
@@ -497,6 +505,7 @@ main .daftar .kartu-makanan .harga-makanan {
   height: 32px;
   border-radius: 2px;
   display: inline-block;
+  background-color: #d6d6d6;
 }
 .halaman button:hover {
   background-image: var(--primary-color);
@@ -510,7 +519,7 @@ main .daftar .kartu-makanan .harga-makanan {
 
 footer {
   position: relative;
-  bottom: -59px;
+  bottom: -65px;
   width: 100%;
   /* height: 14rem; */
   /* margin-top: -3.5rem; */
